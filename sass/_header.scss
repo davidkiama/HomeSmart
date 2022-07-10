@@ -52,7 +52,7 @@
 }
 
 .btn--login {
-  background-color: $color-red;
+  background-color: $color-red-1;
 
   &:hover {
     background-color: $color-red--light;
@@ -69,7 +69,8 @@
 
 // Header content
 .header__content {
-  transform: translateY(18rem);
+  // transform: translateY(18rem);
+  margin-top: 18rem;
   padding: 2rem;
 
   &-container {

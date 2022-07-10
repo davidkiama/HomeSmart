@@ -1,0 +1,32 @@
+.btn {
+  width: max-content;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  background-color: $color-primary-1;
+  color: $color-black;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: $color-red;
+  color: $color-white;
+}
+
+.btn:hover .icon {
+  fill: $color-white;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  transition: all 0.2s;
+}

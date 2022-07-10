@@ -1,0 +1,50 @@
+.section-cards {
+  margin-top: 25rem; // because the section above is moved 18 rem down
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    margin: 10rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.card {
+  width: 30rem;
+  height: 23rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__icon {
+    width: 8rem;
+    height: 8rem;
+
+    display: grid;
+    place-items: center;
+
+    padding: 1.2rem;
+    border-radius: 100px;
+    border: 7px solid $color-primary-1;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+}
