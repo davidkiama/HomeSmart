@@ -16,31 +16,30 @@ body {
 
 .header {
   background-image: linear-gradient(#ca8a25, #f9cb2f);
-  height: 110vh; }
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem; }
-
-.nav__links {
-  display: flex;
-  column-gap: 2rem;
-  text-transform: uppercase;
-  cursor: pointer; }
-
-.nav__link {
-  font-size: 1.8rem;
-  font-weight: bold;
-  transition: all 0.2s; }
-
-.nav__link:hover {
-  color: #332303; }
-
-.nav__auth {
-  display: flex;
-  column-gap: 2rem; }
+  padding: 3rem; }
+  .nav__links {
+    display: flex;
+    column-gap: 2rem;
+    text-transform: uppercase;
+    cursor: pointer; }
+  .nav__link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.2s; }
+    .nav__link:hover {
+      color: #332303; }
+  .nav__auth {
+    display: flex;
+    column-gap: 2rem; }
 
 .btn--login,
 .btn--signup {
@@ -55,12 +54,23 @@ body {
 
 .btn--login {
   background-color: #ef4444; }
-
-.btn--login:hover {
-  background-color: #e65634; }
+  .btn--login:hover {
+    background-color: #e65634; }
 
 .btn--signup {
   background-color: #000000; }
+  .btn--signup:hover {
+    background-color: #332303; }
 
-.btn--signup:hover {
-  background-color: #332303; }
+.header__content {
+  transform: translateY(18rem);
+  padding: 2rem; }
+  .header__content-container {
+    display: grid;
+    place-items: center;
+    background-image: url("../img/couch.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .header__content--card {
+    width: 30rem; }

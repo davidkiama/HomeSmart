@@ -1,6 +1,10 @@
 .header {
   background-image: linear-gradient($color-primary-1, $color-primary-2);
   height: 110vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav {
@@ -8,30 +12,30 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 2rem;
-}
+  padding: 3rem;
 
-.nav__links {
-  display: flex;
-  column-gap: 2rem;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  &__links {
+    display: flex;
+    column-gap: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 
-.nav__link {
-  font-size: 1.8rem;
-  font-weight: bold;
+  &__link {
+    font-size: 1.8rem;
+    font-weight: bold;
 
-  transition: all 0.2s;
-}
+    transition: all 0.2s;
 
-.nav__link:hover {
-  color: $color-black--light;
-}
+    &:hover {
+      color: $color-black--light;
+    }
+  }
 
-.nav__auth {
-  display: flex;
-  column-gap: 2rem;
+  &__auth {
+    display: flex;
+    column-gap: 2rem;
+  }
 }
 
 .btn--login,
@@ -49,16 +53,36 @@
 
 .btn--login {
   background-color: $color-red;
-}
 
-.btn--login:hover {
-  background-color: $color-red--light;
+  &:hover {
+    background-color: $color-red--light;
+  }
 }
 
 .btn--signup {
   background-color: $color-black;
+
+  &:hover {
+    background-color: $color-black--light;
+  }
 }
 
-.btn--signup:hover {
-  background-color: $color-black--light;
+// Header content
+.header__content {
+  transform: translateY(18rem);
+  padding: 2rem;
+
+  &-container {
+    display: grid;
+    place-items: center;
+
+    background-image: url("../img/couch.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--card {
+    width: 30rem;
+  }
 }
