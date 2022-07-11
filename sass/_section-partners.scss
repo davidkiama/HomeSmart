@@ -8,6 +8,7 @@
   &__title {
     color: $color-primary-1;
     font-size: 3.6rem;
+    text-transform: capitalize;
   }
 
   &__text {
@@ -22,7 +23,7 @@
   display: flex;
   justify-content: center;
   gap: 5rem;
-  margin-top: 3rem;
+  margin: 3rem;
 
   flex-wrap: wrap;
 }

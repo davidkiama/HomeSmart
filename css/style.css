@@ -1,4 +1,5 @@
 .btn {
+  cursor: pointer;
   width: max-content;
   padding: 1rem 2.5rem;
   border-radius: 6px;
@@ -148,7 +149,8 @@ body {
   text-align: center; }
   .section-partners__title {
     color: #ca8a25;
-    font-size: 3.6rem; }
+    font-size: 3.6rem;
+    text-transform: capitalize; }
   .section-partners__text {
     margin: 4rem;
     color: #ffffff;
@@ -159,7 +161,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  margin-top: 3rem;
+  margin: 3rem;
   flex-wrap: wrap; }
 
 .partner {
@@ -168,3 +170,32 @@ body {
   padding: 2rem;
   background-color: #ffffff;
   border-radius: 1rem; }
+
+.section-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 10rem; }
+  .section-CTA__left {
+    width: 50%; }
+    .section-CTA__left h3 {
+      font-size: 3.6rem;
+      font-weight: 700; }
+    .section-CTA__left p {
+      line-height: 1.7;
+      margin: 2rem 0; }
+  .section-CTA__right {
+    width: 50%;
+    position: relative; }
+    .section-CTA__right span {
+      position: absolute;
+      bottom: 1rem;
+      right: -4rem;
+      z-index: -1;
+      height: 34rem;
+      width: 34rem;
+      display: block;
+      content: "";
+      border-radius: 100%;
+      border: 0.8rem solid #ca8a25; }

@@ -1,0 +1,41 @@
+.section-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 10rem;
+
+  &__left {
+    width: 50%;
+
+    & h3 {
+      font-size: 3.6rem;
+      font-weight: 700;
+    }
+
+    & p {
+      line-height: 1.7;
+      margin: 2rem 0;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+
+    & span {
+      position: absolute;
+      bottom: 1rem;
+      right: -4rem;
+
+      z-index: -1;
+      height: 34rem;
+      width: 34rem;
+      display: block;
+      content: "";
+      border-radius: 100%;
+      //   background-color: $color-primary-1;
+      border: 0.8rem solid $color-primary-1;
+    }
+  }
+}
