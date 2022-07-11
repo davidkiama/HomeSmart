@@ -91,6 +91,12 @@
 @media only screen and(max-width: 75em) {
   //1200px
 
+  .nav {
+    &__logo {
+      width: 20rem;
+    }
+  }
+
   .header__content {
     margin-top: 12rem;
     &--card {

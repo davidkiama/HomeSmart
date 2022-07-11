@@ -67,3 +67,23 @@
     }
   }
 }
+
+@media only screen and(max-width: 62.5em) {
+  // 1100px
+
+  .section-CTA {
+    &__left {
+      width: 38rem;
+    }
+
+    &__right {
+      width: 40rem;
+
+      & span {
+        height: 20rem;
+        width: 20rem;
+        right: -1rem;
+      }
+    }
+  }
+}

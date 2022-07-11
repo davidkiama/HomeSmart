@@ -20,3 +20,9 @@ body {
     "Noto Color Emoji";
   font-weight: normal;
 }
+
+@media only screen and(max-width: 56.5em) {
+  html {
+    font-size: 58%;
+  }
+}

@@ -12,12 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media only screen and(max-width: 56.25em) {
-      & .side-img {
-        display: none;
-      }
-    }
   }
 }
 
@@ -60,5 +54,16 @@
   //1200px
   .cards {
     justify-content: space-around;
+  }
+}
+
+@media only screen and(max-width: 56.5em) {
+  .section-cards {
+    &__content {
+      padding: 1rem 2rem;
+      & .side-img {
+        display: none;
+      }
+    }
   }
 }
