@@ -183,7 +183,7 @@ body {
       font-size: 3.6rem;
       font-weight: 700; }
     .section-CTA__left p {
-      line-height: 1.7;
+      line-height: 1.8;
       margin: 2rem 0; }
   .section-CTA__right {
     width: 50%;
@@ -199,3 +199,49 @@ body {
       content: "";
       border-radius: 100%;
       border: 0.8rem solid #ca8a25; }
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 4rem; }
+  .section-contact__left {
+    width: 40rem;
+    display: grid;
+    place-items: center; }
+    .section-contact__left-lamp {
+      margin-bottom: 2rem; }
+    .section-contact__left-card {
+      max-width: 20rem;
+      margin: 2rem; }
+  .section-contact__right {
+    width: 48rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 4px solid #332303; }
+    .section-contact__right form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto; }
+      .section-contact__right form h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem; }
+      .section-contact__right form label {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600; }
+      .section-contact__right form input,
+      .section-contact__right form textarea {
+        outline: none;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+        border-radius: 6px;
+        border: 4px solid #ca8a25; }
+      .section-contact__right form button {
+        border: none;
+        font-size: 2rem; }
