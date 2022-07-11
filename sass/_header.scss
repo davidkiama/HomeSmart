@@ -1,10 +1,29 @@
 .header {
   background-image: linear-gradient($color-primary-1, $color-primary-2);
   height: 110vh;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &__logo {
+    cursor: pointer;
+    z-index: 20; //to make a positioned element to have hover effects
+
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & img {
+      width: 20rem;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }
 
 .nav {
@@ -67,6 +86,10 @@
   }
 }
 
+.icon-menu {
+  display: none;
+}
+
 // Header content
 .header__content {
   // transform: translateY(18rem);
@@ -91,16 +114,90 @@
 @media only screen and(max-width: 75em) {
   //1200px
 
-  .nav {
-    &__logo {
-      width: 20rem;
-    }
-  }
-
   .header__content {
     margin-top: 12rem;
     &--card {
       width: 26rem;
     }
   }
+}
+
+@media only screen and(max-width: 41.5em) {
+  .header {
+    &__logo {
+      left: 3rem;
+      transform: translateX(0);
+    }
+  }
+
+  .header__content {
+    margin-top: 26rem;
+
+    &-container {
+      background-position: bottom;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: -100rem;
+    width: 100%;
+    background-color: $color-primary-1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: all 0.5s;
+
+    &__links,
+    &__auth {
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+    }
+
+    &__link,
+    .btn--login,
+    .btn--signup {
+      margin: 2rem;
+      width: 100%;
+    }
+  }
+
+  .icon-menu {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+
+    height: 4rem;
+    transition: all 0.4s;
+  }
+
+  .header__content {
+    &--card {
+      width: 22rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 24em) {
+  .header__content {
+    &-container {
+      background-position: bottom;
+    }
+
+    &--card {
+      width: 18rem;
+    }
+  }
+}
+
+///Should be at the BOTTOM
+.display_menu {
+  top: 0rem;
+  left: 0;
+  height: 100vh;
+  width: 100%;
 }

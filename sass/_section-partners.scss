@@ -35,3 +35,20 @@
   background-color: $color-white;
   border-radius: 1rem;
 }
+
+@media only screen and(max-width: 41.5em) {
+  .section-partners {
+    padding: 2rem 7%;
+  }
+}
+
+@media only screen and(max-width: 24em) {
+  .section-partners {
+    padding: 2rem 3rem;
+  }
+
+  .partners {
+    gap: 2rem;
+    margin: 1rem;
+  }
+}

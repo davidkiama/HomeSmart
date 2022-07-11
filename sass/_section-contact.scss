@@ -1,5 +1,6 @@
 .section-contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -62,6 +63,15 @@
         border: none;
         font-size: 2rem;
       }
+    }
+  }
+}
+
+@media only screen and(max-width: 31.5em) {
+  .section-contact {
+    &__right {
+      width: 30rem;
+      margin: 1rem 2rem;
     }
   }
 }

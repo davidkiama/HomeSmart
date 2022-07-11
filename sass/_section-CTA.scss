@@ -89,6 +89,7 @@
 }
 
 @media only screen and(max-width: 50em) {
+  //800px
   .section-CTA {
     &__left {
       width: 30rem;
@@ -100,13 +101,35 @@
   }
 }
 
-@media only screen and(max-width: 37.5em) {
+@media only screen and(max-width: 43.75em) {
+  //700px
   .section-CTA {
     flex-direction: column-reverse;
     row-gap: 5rem;
 
     &__left {
       width: 40rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 41.5em) {
+  .section-CTA {
+    &__left {
+      width: 33rem;
+    }
+
+    &__right {
+      width: 30rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 24em) {
+  .section-CTA {
+    &__right {
+      width: 30rem;
+      align-self: baseline;
     }
   }
 }
