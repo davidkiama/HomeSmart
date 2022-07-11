@@ -1,0 +1,36 @@
+.section-partners {
+  padding: 2rem 20%;
+  background-color: $color-black;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  &__title {
+    color: $color-primary-1;
+    font-size: 3.6rem;
+  }
+
+  &__text {
+    margin: 4rem;
+    color: $color-white;
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+
+  flex-wrap: wrap;
+}
+
+.partner {
+  width: 12rem;
+  height: 12rem;
+  padding: 2rem;
+  background-color: $color-white;
+  border-radius: 1rem;
+}

@@ -117,6 +117,7 @@ body {
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 2rem; }
 
 .card {
@@ -138,3 +139,32 @@ body {
   .card__title {
     font-size: 2.4rem;
     font-weight: 700; }
+
+.section-partners {
+  padding: 2rem 20%;
+  background-color: #000000;
+  display: grid;
+  place-items: center;
+  text-align: center; }
+  .section-partners__title {
+    color: #ca8a25;
+    font-size: 3.6rem; }
+  .section-partners__text {
+    margin: 4rem;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.8; }
+
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap; }
+
+.partner {
+  width: 12rem;
+  height: 12rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem; }
