@@ -99,3 +99,14 @@
     }
   }
 }
+
+@media only screen and(max-width: 37.5em) {
+  .section-CTA {
+    flex-direction: column-reverse;
+    row-gap: 5rem;
+
+    &__left {
+      width: 40rem;
+    }
+  }
+}

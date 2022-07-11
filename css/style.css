@@ -1,7 +1,7 @@
 .btn {
   cursor: pointer;
   width: max-content;
-  padding: 1rem 2.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 6px;
   background-color: #ca8a25;
   color: #000000;
@@ -76,7 +76,7 @@ body {
 .btn--signup {
   cursor: pointer;
   color: #ffffff;
-  padding: 1.8rem;
+  padding: 1.2rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -254,6 +254,13 @@ body {
     width: 30rem; }
   .section-CTA__right {
     width: 36rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-CTA {
+    flex-direction: column-reverse;
+    row-gap: 5rem; }
+    .section-CTA__left {
+      width: 40rem; } }
 
 .section-contact {
   display: flex;
