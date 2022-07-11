@@ -102,6 +102,12 @@ body {
   .header__content--card {
     width: 30rem; }
 
+@media only screen and (max-width: 75em) {
+  .header__content {
+    margin-top: 12rem; }
+    .header__content--card {
+      width: 26rem; } }
+
 .section-cards {
   margin-top: 25rem;
   display: flex;
@@ -114,12 +120,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .section-cards__content .side-img {
+        display: none; } }
 
 .cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 2rem; }
+  gap: 2rem; }
 
 .card {
   width: 30rem;
@@ -140,6 +149,10 @@ body {
   .card__title {
     font-size: 2.4rem;
     font-weight: 700; }
+
+@media only screen and (max-width: 75em) {
+  .cards {
+    justify-content: space-around; } }
 
 .section-partners {
   padding: 2rem 20%;
@@ -175,10 +188,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 4rem;
-  padding: 10rem; }
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 8%; }
   .section-CTA__left {
-    width: 50%; }
+    width: 45rem; }
     .section-CTA__left h3 {
       font-size: 3.6rem;
       font-weight: 700; }
@@ -186,19 +200,35 @@ body {
       line-height: 1.8;
       margin: 2rem 0; }
   .section-CTA__right {
-    width: 50%;
+    width: 55rem;
     position: relative; }
     .section-CTA__right span {
       position: absolute;
       bottom: 1rem;
       right: -4rem;
       z-index: -1;
-      height: 34rem;
-      width: 34rem;
+      height: 32rem;
+      width: 32rem;
       display: block;
       content: "";
       border-radius: 100%;
       border: 0.8rem solid #ca8a25; }
+
+@media only screen and (max-width: 81.25em) {
+  .section-CTA {
+    padding: 4rem;
+    gap: 1rem; } }
+
+@media only screen and (max-width: 68.75em) {
+  .section-CTA {
+    padding: 4rem;
+    gap: 1rem; }
+    .section-CTA__left {
+      width: 40rem; }
+    .section-CTA__right {
+      width: 48rem; }
+      .section-CTA__right img {
+        width: 100%; } }
 
 .section-contact {
   display: flex;

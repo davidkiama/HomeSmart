@@ -12,6 +12,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and(max-width: 56.25em) {
+      & .side-img {
+        display: none;
+      }
+    }
   }
 }
 
@@ -19,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
 .card {
@@ -47,5 +53,12 @@
   &__title {
     font-size: 2.4rem;
     font-weight: 700;
+  }
+}
+
+@media only screen and(max-width: 75em) {
+  //1200px
+  .cards {
+    justify-content: space-around;
   }
 }

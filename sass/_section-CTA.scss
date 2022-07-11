@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 4rem;
-  padding: 10rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 8%;
 
   &__left {
-    width: 50%;
+    width: 45rem;
 
     & h3 {
       font-size: 3.6rem;
@@ -20,7 +21,7 @@
   }
 
   &__right {
-    width: 50%;
+    width: 55rem;
     position: relative;
 
     & span {
@@ -29,12 +30,40 @@
       right: -4rem;
 
       z-index: -1;
-      height: 34rem;
-      width: 34rem;
+      height: 32rem;
+      width: 32rem;
       display: block;
       content: "";
       border-radius: 100%;
       border: 0.8rem solid $color-primary-1;
+    }
+  }
+}
+
+@media only screen and(max-width: 81.25em) {
+  //1300px
+  .section-CTA {
+    padding: 4rem;
+    gap: 1rem;
+  }
+}
+
+@media only screen and(max-width: 68.75em) {
+  // 1100px
+
+  .section-CTA {
+    padding: 4rem;
+    gap: 1rem;
+
+    &__left {
+      width: 40rem;
+    }
+
+    &__right {
+      width: 48rem;
+      & img {
+        width: 100%;
+      }
     }
   }
 }
