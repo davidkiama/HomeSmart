@@ -87,3 +87,15 @@
     }
   }
 }
+
+@media only screen and(max-width: 50em) {
+  .section-CTA {
+    &__left {
+      width: 30rem;
+    }
+
+    &__right {
+      width: 36rem;
+    }
+  }
+}

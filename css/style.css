@@ -249,6 +249,12 @@ body {
       width: 20rem;
       right: -1rem; } }
 
+@media only screen and (max-width: 50em) {
+  .section-CTA__left {
+    width: 30rem; }
+  .section-CTA__right {
+    width: 36rem; } }
+
 .section-contact {
   display: flex;
   justify-content: center;
