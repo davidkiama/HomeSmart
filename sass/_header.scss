@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient($color-primary-1, $color-primary-2);
-  height: 110vh;
+  height: 70rem;
   position: relative;
 
   display: flex;
@@ -93,7 +93,7 @@
 // Header content
 .header__content {
   // transform: translateY(18rem);
-  margin-top: 18rem;
+  margin-top: 15rem;
   padding: 2rem;
 
   &-container {
@@ -115,10 +115,40 @@
   //1200px
 
   .header__content {
-    margin-top: 12rem;
     &--card {
       width: 26rem;
     }
+  }
+}
+
+@media only screen and(max-width: 56.25em) {
+  //900px
+  .header {
+    &__logo {
+      top: 2rem;
+      left: 3rem;
+      transform: translateX(0);
+    }
+
+    .header__content {
+      margin-top: 28rem;
+
+      &-container {
+        background-position: bottom;
+      }
+
+      &--card {
+        width: 22rem;
+      }
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    background-color: $color-primary-1;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -139,7 +169,6 @@
   }
 
   .nav {
-    position: absolute;
     top: -100rem;
     width: 100%;
     background-color: $color-primary-1;

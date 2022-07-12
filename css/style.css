@@ -26,11 +26,11 @@
   transition: all 0.2s; }
 
 .section {
-  transition: transform 1s, opacity 1s; }
+  transition: transform 1.2s, opacity 1s; }
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem); }
+  transform: translateY(9rem); }
 
 *,
 ::before,
@@ -54,7 +54,7 @@ body {
 
 .header {
   background-image: linear-gradient(#ca8a25, #f9cb2f);
-  height: 110vh;
+  height: 70rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ body {
   display: none; }
 
 .header__content {
-  margin-top: 18rem;
+  margin-top: 15rem;
   padding: 2rem; }
   .header__content-container {
     display: grid;
@@ -129,10 +129,26 @@ body {
     width: 30rem; }
 
 @media only screen and (max-width: 75em) {
-  .header__content {
-    margin-top: 12rem; }
-    .header__content--card {
-      width: 26rem; } }
+  .header__content--card {
+    width: 26rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .header__logo {
+    top: 2rem;
+    left: 3rem;
+    transform: translateX(0); }
+  .header .header__content {
+    margin-top: 28rem; }
+    .header .header__content-container {
+      background-position: bottom; }
+    .header .header__content--card {
+      width: 22rem; }
+  .nav {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    background-color: #ca8a25;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.1); } }
 
 @media only screen and (max-width: 41.5em) {
   .header__logo {
@@ -143,7 +159,6 @@ body {
     .header__content-container {
       background-position: bottom; }
   .nav {
-    position: absolute;
     top: -100rem;
     width: 100%;
     background-color: #ca8a25;
@@ -184,7 +199,7 @@ body {
   width: 100%; }
 
 .section-cards {
-  margin-top: 25rem;
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,6 +280,10 @@ body {
   padding: 2rem;
   background-color: #ffffff;
   border-radius: 1rem; }
+
+@media only screen and (max-width: 50em) {
+  .section-partners {
+    padding: 2rem 10%; } }
 
 @media only screen and (max-width: 41.5em) {
   .section-partners {
@@ -390,7 +409,10 @@ body {
       .section-contact__right form label {
         font-size: 1.5rem;
         text-transform: uppercase;
-        font-weight: 600; }
+        font-weight: 600;
+        transition: all 0.2s; }
+      .section-contact__right form .active-label {
+        color: #ca8a25; }
       .section-contact__right form input,
       .section-contact__right form textarea {
         outline: none;
@@ -403,6 +425,18 @@ body {
       .section-contact__right form button {
         border: none;
         font-size: 2rem; }
+
+@media only screen and (max-width: 68.75em) {
+  .section-contact__right {
+    width: 40rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .section-contact {
+    padding: 2rem; }
+    .section-contact__left {
+      width: 30rem; }
+    .section-contact__right {
+      width: 32rem; } }
 
 @media only screen and (max-width: 31.5em) {
   .section-contact__right {
