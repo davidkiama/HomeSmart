@@ -403,7 +403,10 @@ body {
       .section-contact__right form label {
         font-size: 1.5rem;
         text-transform: uppercase;
-        font-weight: 600; }
+        font-weight: 600;
+        transition: all 0.2s; }
+      .section-contact__right form .active-label {
+        color: #ca8a25; }
       .section-contact__right form input,
       .section-contact__right form textarea {
         outline: none;
