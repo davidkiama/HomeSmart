@@ -266,6 +266,10 @@ body {
   background-color: #ffffff;
   border-radius: 1rem; }
 
+@media only screen and (max-width: 50em) {
+  .section-partners {
+    padding: 2rem 10%; } }
+
 @media only screen and (max-width: 41.5em) {
   .section-partners {
     padding: 2rem 7%; } }
