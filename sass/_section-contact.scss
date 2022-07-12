@@ -73,6 +73,29 @@
   }
 }
 
+@media only screen and(max-width: 68.75em) {
+  //1100px
+  .section-contact {
+    &__right {
+      width: 40rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 56.25em) {
+  //900px
+  .section-contact {
+    padding: 2rem;
+    &__left {
+      width: 30rem;
+    }
+
+    &__right {
+      width: 32rem;
+    }
+  }
+}
+
 @media only screen and(max-width: 31.5em) {
   .section-contact {
     &__right {

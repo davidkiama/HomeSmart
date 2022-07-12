@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient($color-primary-1, $color-primary-2);
-  height: 110vh;
+  height: 70rem;
   position: relative;
 
   display: flex;
@@ -93,7 +93,7 @@
 // Header content
 .header__content {
   // transform: translateY(18rem);
-  margin-top: 18rem;
+  margin-top: 15rem;
   padding: 2rem;
 
   &-container {
@@ -128,6 +128,18 @@
       top: 2rem;
       left: 3rem;
       transform: translateX(0);
+    }
+
+    .header__content {
+      margin-top: 28rem;
+
+      &-container {
+        background-position: bottom;
+      }
+
+      &--card {
+        width: 22rem;
+      }
     }
   }
 
