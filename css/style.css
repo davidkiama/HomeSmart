@@ -54,7 +54,7 @@ body {
 
 .header {
   background-image: linear-gradient(#ca8a25, #f9cb2f);
-  height: 70rem;
+  height: 80rem;
   position: relative;
   display: flex;
   flex-direction: column;
