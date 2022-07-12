@@ -115,10 +115,27 @@
   //1200px
 
   .header__content {
-    margin-top: 12rem;
     &--card {
       width: 26rem;
     }
+  }
+}
+
+@media only screen and(max-width: 56.25em) {
+  //900px
+  .header {
+    &__logo {
+      top: 2rem;
+      left: 3rem;
+      transform: translateX(0);
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.61);
   }
 }
 
@@ -139,7 +156,6 @@
   }
 
   .nav {
-    position: absolute;
     top: -100rem;
     width: 100%;
     background-color: $color-primary-1;

@@ -129,10 +129,19 @@ body {
     width: 30rem; }
 
 @media only screen and (max-width: 75em) {
-  .header__content {
-    margin-top: 12rem; }
-    .header__content--card {
-      width: 26rem; } }
+  .header__content--card {
+    width: 26rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .header__logo {
+    top: 2rem;
+    left: 3rem;
+    transform: translateX(0); }
+  .nav {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.61); } }
 
 @media only screen and (max-width: 41.5em) {
   .header__logo {
@@ -143,7 +152,6 @@ body {
     .header__content-container {
       background-position: bottom; }
   .nav {
-    position: absolute;
     top: -100rem;
     width: 100%;
     background-color: #ca8a25;
