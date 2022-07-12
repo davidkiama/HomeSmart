@@ -135,7 +135,8 @@
     position: absolute;
     top: 5rem;
     width: 100%;
-    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.61);
+    background-color: $color-primary-1;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
